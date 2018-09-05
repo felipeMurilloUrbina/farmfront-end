@@ -1,0 +1,30 @@
+<div class="col-md-12">
+    <div class="card">
+      <!-- <div class="card-header"></div> -->
+      <div class="card-body">
+        <form #empresaForm="ngForm" (submit)="save(empresa);" ngNativeValidate>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="descripcionInput">Descripcion:</label>
+                <input type="text" class="form-control"  #descripcionInput id="descripcion" [value]="empresa.descripcion" (change)="empresa.descripcion = descripcionInput.value" placeholder="Descripcion ..." required>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="avatarInput">Avatar:</label>
+                <input type="text" class="form-control"  #avatarInput id="avatar" [value]="empresa.avatar" (change)="empresa.avatar = avatarInput.value" placeholder="Avatar ..." required>
+              </div>
+            </div>
+  
+   
+          </div>  
+          <div  class="container-fluid text-center">
+            <button class="btn btn-app"  routerLink="/admin/empresas"><i class="fa fa-arrow-circle-left"></i>Cancelar</button>
+            <button type="submit" class="btn btn-app"><i class="fa fa-save"></i>Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
