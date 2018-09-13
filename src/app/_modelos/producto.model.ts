@@ -1,19 +1,19 @@
 export class Producto {
-  public id: number;
-  public empresaId: number;
-  public categoriaId: number;
-  public lineaId: number;
-  public proveedorId: number;
-  public monedaId: number;
-  public codigo: string;
-  public descripcion: string;
-  public precio: number;
-  public precio1: number;
-  public precio2: number;
-  public precio3: number;
-  public activo: string;
-  public fecha: Date;
-  public localizacion: string;
-  public observacion: string;
-  public imagen: string;
+  public id = 0; 
+  public empresaId = 0; 
+  public categoriaId = 0; 
+  public lineaId = 0; 
+  public proveedorId = 0; 
+  public monedaId = 0; 
+  public codigo = ''; 
+  public descripcion = ''; 
+  public precio = 0; 
+  public precio1 = 0; 
+  public precio2 = 0; 
+  public precio3 = 0; 
+  public activo = ''; 
+  public fecha = new Date(); 
+  public localizacion = ''; 
+  public observacion = ''; 
+  public imagen = ''; 
 }

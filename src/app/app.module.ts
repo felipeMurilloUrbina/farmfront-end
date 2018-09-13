@@ -1,4 +1,3 @@
-import { AdminRoutingModule } from './_modulos/admin-routing.module';
 import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,7 +21,6 @@ import { AdminModule } from './_modulos/admin/admin.module';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-
     HttpClientModule,
     ReactiveFormsModule,
     ToasterModule.forRoot(),

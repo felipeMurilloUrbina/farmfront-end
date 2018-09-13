@@ -1,15 +1,15 @@
  
 
 export class Almacen {
-  public id: number;
-  public sucursalId: number;
-  public empresaId: number;
-  public usuarioCreadorId: string;
-  public usuarioModificadorId: string;
-  public codigo: string;
-  public descripcion: string;
-  public activo: string;
-  public valorMin: number;
-  public valorMax: number;
-  public fecha: Date;
+  public id = 0; 
+  public sucursalId = 0; 
+  public empresaId = 0; 
+  public usuarioCreadorId = ''; 
+  public usuarioModificadorId = ''; 
+  public codigo = ''; 
+  public descripcion = ''; 
+  public activo = ''; 
+  public valorMin = 0; 
+  public valorMax = 0; 
+  public fecha = new Date(); 
 }

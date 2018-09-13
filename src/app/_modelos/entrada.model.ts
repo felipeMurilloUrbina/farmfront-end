@@ -1,10 +1,10 @@
 export class Entrada {
-  public id: number;
-  public empresaId: number;
-  public proveedorId: number;
-  public usuarioCreadorId: string;
-  public usuarioModificadorId: string;
-  public fechaMovimiento: Date;
-  public fecha: Date;
-  public activo: string;
+  public id = 0; 
+  public empresaId = 0; 
+  public proveedorId = 0; 
+  public usuarioCreadorId = ''; 
+  public usuarioModificadorId = ''; 
+  public fechaMovimiento = new Date(); 
+  public fecha = new Date(); 
+  public activo = ''; 
 }

@@ -1,12 +1,12 @@
 export class TiposMovimiento {
-  public id: number;
-  public usuarioId: number;
-  public usuarioCreadorId: number;
-  public usuarioModificadorId: number;
-  public tipo: string;
-  public codigo: string;
-  public descripcion: string;
-  public clasificacion: string;
-  public activo: string;
-  public fecha: Date;
+  public id = 0; 
+  public usuarioId = 0; 
+  public usuarioCreadorId = 0; 
+  public usuarioModificadorId = 0; 
+  public tipo = ''; 
+  public codigo = ''; 
+  public descripcion = ''; 
+  public clasificacion = ''; 
+  public activo = ''; 
+  public fecha = new Date(); 
 }

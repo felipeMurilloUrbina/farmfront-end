@@ -29,96 +29,87 @@ export class MenuComponent implements OnInit {
           items: [{
                   label: 'Almacenes',
                   icon: 'pi pi-fw pi-plus',
-                  routerLink: 'almacenes',
-                  items: []
+                  routerLink: '/almacenes'
               },
               {separator: true},
               {
                 label: 'Lineas',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'lineas',
-                items: []
+                routerLink: '/lineas',
               },
               {
                 label: 'Productos',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
-                items: []
+                routerLink: '/productos'
               },
               {separator: true},
               {
                 label: 'Clientes',
                 icon: 'pi pi-fw pi-plus',
-                items: [{
-                        label: 'Grupos',
-                  icon: 'pi pi-fw pi-plus',
-                  routerLink: 'productos',
-                }]
+                routerLink: '/clientes',
               },
               {
                 label: 'Tipos de Movimientos',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
+                routerLink: '/tipos-movimiento',
               },
               {
                 label: 'Usuarios',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
-                items: []
+                routerLink: '/usuarios',
               },
               {
                 label: 'Proveedores',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
-                items: []
+                routerLink: '/proveedores',
               },
               {
                 label: 'Perfiles',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
-                items: []
+                routerLink: '/productos',
               },
               {
                 label: 'Permisos',
                 icon: 'pi pi-fw pi-plus',
                 routerLink: 'productos',
-                items: []
               },
               {
                 label: 'Grupos de Clientes',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
+                routerLink: '/grupos',
               },
               {
                 label: 'Sucursales',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
+                routerLink: '/sucursales',
               },
               {
                 label: 'Categorias de Prod.',
                 icon: 'pi pi-fw pi-plus',
-                routerLink: 'productos',
+                routerLink: '/categorias',
               }
           ]
       },
       {
-          label: 'Edit',
+          label: 'Inventarios',
           icon: 'pi pi-fw pi-pencil',
           items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+              {label: 'Entradas', icon: 'pi pi-fw pi-trash'},
+              {label: 'Salidas', icon: 'pi pi-fw pi-refresh'},
+              {label: 'Traspasos', icon: 'pi pi-fw pi-refresh'},
+              {label: 'Re-Ajustes', icon: 'pi pi-fw pi-refresh'}
           ]
       },
       {
-          label: 'Help',
+          label: 'Facturacion',
           icon: 'pi pi-fw pi-question',
           items: [
               {
-                  label: 'Contents',
+                  label: 'Facturas',
                   icon: 'pi pi-pi pi-bars'
               },
               {
-                  label: 'Search',
+                  label: 'Nueva Factura',
                   icon: 'pi pi-pi pi-search',
                   items: [
                       {
@@ -137,11 +128,11 @@ export class MenuComponent implements OnInit {
           ]
       },
       {
-          label: 'Actions',
+          label: 'Cartera',
           icon: 'pi pi-fw pi-cog',
           items: [
               {
-                  label: 'Edit',
+                  label: 'Abonar',
                   icon: 'pi pi-fw pi-pencil',
                   items: [
                       {label: 'Save', icon: 'pi pi-fw pi-save'},
@@ -149,13 +140,38 @@ export class MenuComponent implements OnInit {
                   ]
               },
               {
-                  label: 'Other',
+                  label: 'Listado',
                   icon: 'pi pi-fw pi-tags',
-                  items: [
-                      {label: 'Delete', icon: 'pi pi-fw pi-minus'}
-                  ]
               }
           ]
+      },
+      {
+        label: 'Reportes',
+        icon: 'pi pi-fw pi-cog',
+        items: [
+
+        ]
+      },
+      {
+        label: 'Ayuda',
+        icon: 'pi pi-fw pi-cog',
+        items: [
+            {
+                label: 'Edit',
+                icon: 'pi pi-fw pi-pencil',
+                items: [
+                    {label: 'Save', icon: 'pi pi-fw pi-save'},
+                    {label: 'Update', icon: 'pi pi-fw pi-save'},
+                ]
+            },
+            {
+                label: 'Other',
+                icon: 'pi pi-fw pi-tags',
+                items: [
+                    {label: 'Delete', icon: 'pi pi-fw pi-minus'}
+                ]
+            }
+        ]
       }
   ];
   }
